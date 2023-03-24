@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist Assignment</title>
+</head>
+<body>
+    <!-- Datalist/Select -->
+    <h2>Datalist/Select questions</h2>
+    <!-- Ice cream flavors -->
+    <p>Choose a flavor:
+    <input list="iceCream" name="iceCream">
+    <datalist id="iceCream">
+        <option value="Chocolate">Chocolate</option>
+        <option value="Coconut">Coconut</option>
+        <option value="Mint">Mint</option>
+        <option value="Strawberry">Strawberry</option>
+        <option value="Vanilla">Vanilla</option>
+    </datalist>
+    </p>
+    <!-- Using the select element -->
+    <p>Choose a flavor:
+        <select name="iceCreams" id="iceCreams">
+            <option value="Chocolate">Chocolate</option>
+            <option value="Coconut">Coconut</option>
+            <option value="Mint">Mint</option>
+            <option value="Strawberry">Strawberry</option>
+            <option value="Vanilla">Vanilla</option>
+        </select>
+    </p>
+
+    <!-- Feild set question -->
+    <h2>Feildset Questions</h2>
+    <form>
+        <fieldset>
+            <legend style="background-color:black; color:white;">Choose your favorite monster</legend>
+            <p><input type="radio">Kraken</p>
+            <p><input type="radio">Sasquatch</p>
+            <p><input type="radio">Mothman</p>
+        </fieldset>
+    </form>
+
+    <!-- Meter question -->
+    <h2>Meter Questions</h2>
+    <div>
+        <p>0 <meter value="91" min="0" max="120" low="50" high="90" optimum="75"></meter> 120</p>
+        <p>0 <meter value="30" min="0" max="120" low="50" high="90" optimum="75"></meter> 120</p>
+        <p>0 <meter value="75" min="0" max="120" low="50" high="90" optimum="75"></meter> 120</p>
+    </div>
+
+    <!-- Output questions -->
+    <h2>Output Questions:</h2>
+    <!-- addition -->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0 <input type="range" id="a" value="50">100 
+        +<input type="number" id="b" value="10">
+        =<output name="x" for="a b"></output>
+    </form>
+    <!-- Multiplication -->
+    <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+        <input type="number" id="a" value="5">
+        *<input type="number" id="b" value="2">
+        =<output name="x" for="a b"></output>
+    </form>
+</body>
+</html>
